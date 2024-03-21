@@ -5,14 +5,14 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
 class DiceViewModel : ViewModel() {
-    private val numRolled = MutableLiveData<Int>()
+    private val numRolled = MutableLiveData<String>()
 
-    fun setNumRolled(_numRolled:Int)
+    fun setNumRolled(_numRolled:String)
     {
         numRolled.value=_numRolled
     }
 
-    fun getNumRolled(): LiveData<Int>
+    fun getNumRolled(): LiveData<String>
     {
         return numRolled
     }
